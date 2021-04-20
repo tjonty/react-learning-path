@@ -1,18 +1,15 @@
-//Create a react app from scratch.
 var React = require("react");
 var ReactDOM = require("react-dom");
 
-//It should display a h1 heading.
-//It should display an unordered list (bullet points).
-//It should contain 3 list elements.
+const name = "jonty";
+const number = 23;
+
 ReactDOM.render(
   <div>
-    <h1>hello</h1>
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-    </ul>
+    <h1>hello {name}</h1>
+    <p>Your lucky number is {number}</p>
+    <p>Your favourite number is {4 + 4}</p>
+    <p>copyright {new Date().getFullYear()}</p>
   </div>,
   document.getElementById("root")
 );
